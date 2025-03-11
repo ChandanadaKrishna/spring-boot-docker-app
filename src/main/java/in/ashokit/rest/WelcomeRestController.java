@@ -37,6 +37,16 @@ public class WelcomeRestController {
 		logger.info("***** ***************************** *****");
 		return msg;
 	}
+
+	@GetMapping("/wish")
+	public String wish() {
+		logger.info("***** welcomeMsg() execution start *****");
+		String msg = "congratulation - Software Training Institute (HYD) ..!!";
+		logger.info("***** welcomeMsg() execution end *****");
+		String s = "hello";
+		logger.info("******************************************************************");
+		return msg;
+	}
 	
 	
 }
